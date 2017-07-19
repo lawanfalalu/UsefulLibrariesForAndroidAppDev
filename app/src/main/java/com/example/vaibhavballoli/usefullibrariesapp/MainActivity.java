@@ -16,14 +16,14 @@ import android.view.MenuItem;
 * TODO:3. Picasso Image Loading(and Downloading) Library. - TO BE DONE
 * TODO:4. Gson Deserializer to parse JSON objects. - TO BE DONE
 * TODO:5. Dart and Henson to handle intents and intent extras by cutting down the classic(boring) code. - TO BE DONE
-* TODO:6. Try to do retrofit - GitHub API possibly - Easy Access and no API keys. - TO BE DONE
+* TODO:6. Try using Retrofit - GitHub API possibly - Easy Access and no API keys. - TO BE DONE
 * TODO:7. Activity regarding usage of camera - Google Vision API[Barcode and QRCode Scanning, Text Detection, Face Detection etc.] - Possibly Barcode and QRCode here. - TO BE DONE
-* TODO:8. A SignIn and SignUp page with Realm and encryption alongside. - TO BE DONE
+* TODO:8. A SignIn and SignUp page with Realm and encryption alongside FingerPrint Authentication. - TO BE DONE
 * TODO:9. Realm - Database Example Codes - Basic Operations. - TO BE DONE
 * TODO:10. Some usage of fragments. - TO BE DONE
 * TODO:11. Dependency Injections using Dagger2. - TO BE DONE
 * TODO.12. Follow Material Design as much as possible. - TO BE DONE
-*  */
+* */
 public class MainActivity extends AppCompatActivity {
 
     @Override
