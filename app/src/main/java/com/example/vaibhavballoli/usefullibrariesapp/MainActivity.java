@@ -11,7 +11,7 @@ import android.view.MenuItem;
 
 /*
 * TODO:1. RecyclerView with best practices[handling clicks, etc.].
-* TODO:2. Using ButterKnife.
+* TODO:2. Using ButterKnife
 * TODO:3. Picasso Image Loading(and Downloading) Library.
 * TODO:4. Gson Serializer to parse JSON objects.
 * TODO:5. Dart and Henson to handle intents by cutting down the classic(boring) code.
