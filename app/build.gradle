@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'realm-android'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
@@ -28,4 +28,27 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:25.3.1'
     testCompile 'junit:junit:4.12'
+    //ButterKnife - http://jakewharton.github.io/butterknife/
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    //Dart - https://github.com/f2prateek/dart
+    compile 'com.f2prateek.dart:dart:2.0.1'
+    provided 'com.f2prateek.dart:dart-processor:2.0.1'
+    //Henson - https://github.com/f2prateek/dart
+    compile 'com.f2prateek.dart:henson:2.0.1'
+    provided 'com.f2prateek.dart:henson-processor:2.0.1'
+    //Google Vision
+    compile 'com.google.android.gms:play-services:7.8+'
+    //Retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.7.0'
+    //Gson
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    //Picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //Dagger - 2
+
+    //Realm - ^ on top and in the gradle project
+    //
+
 }
