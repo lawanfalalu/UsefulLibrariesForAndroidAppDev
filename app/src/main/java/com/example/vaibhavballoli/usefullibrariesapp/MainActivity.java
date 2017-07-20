@@ -27,7 +27,7 @@ import butterknife.BindView;
 * TODO:5. Dart and Henson to handle intents and intent extras by cutting down the classic(boring) code. - TO BE DONE
 * TODO:6. Try using Retrofit - GitHub API possibly - Easy Access and no API keys. - TO BE DONE
 * TODO:7. Activity regarding usage of camera - Google Vision API[Barcode and QRCode Scanning, Text Detection, Face Detection etc.] - Possibly Barcode and QRCode here. - TO BE DONE
-* TODO:8. A SignIn and SignUp page with Realm and encryption alongside FingerPrint Authentication. - TO BE DONE
+* TODO:8. A SignIn with Realm and encryption(if needed) alongside FingerPrint Authentication. - TO BE DONE
 * TODO:9. Realm - Database Example Codes - Basic Operations. - TO BE DONE
 * TODO:10. Some usage of fragments. - TO BE DONE
 * TODO:11. Dependency Injections using Dagger2. - TO BE DONE
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.mainactivity_toolbar);
         setSupportActionBar(toolbar);
         //Here will be the code for a navigation drawer from the landing page after the login. Navigation Drawer consists of all activities and fragments to add.
         //Flow of the App:
