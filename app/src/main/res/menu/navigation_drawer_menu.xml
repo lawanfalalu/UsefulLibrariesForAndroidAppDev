@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group>
+
     <group
         android:checkableBehavior="single">
         <item
@@ -12,6 +12,9 @@
         <item
             android:title="Realm"
             android:id="@+id/nav_realm"></item>
+        <item
+            android:title="Image Viewer"
+            android:id="@+id/nav_image_viewer"></item>
 
     </group>
     <item
@@ -21,5 +24,5 @@
         android:title="Logout"
         android:id="@+id/nav_logout">
     </item>
-    </group>
+
 </menu>

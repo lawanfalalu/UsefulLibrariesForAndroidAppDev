@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /*
 * TODO:0. Adding appropriate links to videos and references to each library usage and try incorporating Shared Preferences and Settings to give a better UI control to the user. - TO BE DONE
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.mainactivity_toolbar);
         setSupportActionBar(toolbar);
+        ButterKnife.bind(this);
         //Here will be the code for a navigation drawer from the landing page after the login. Navigation Drawer consists of all activities and fragments to add.
         //Flow of the App:
         /*
@@ -58,10 +60,10 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()){ // Since a navigation view must be static, all click events must be defined
                     case R.id.nav_recyclerlistview:
                         displayToast("Going to RecyclerListView");
-                        drawerLayout.closeDrawer(Gravity.START);
+                        drawerLayout.closeDrawer(Gravity.START);//Important - Try without it and you'll notice it doesn't look good - especial;y while handling fragments from teh navigation view.
                         break;
                     case R.id.nav_googlevisionapi:
                         displayToast("Scan a 1D or 2D code");
@@ -76,7 +78,12 @@ public class MainActivity extends AppCompatActivity {
                         drawerLayout.closeDrawer(Gravity.START);
                         break;
                     case R.id.nav_logout:
-                        displayToast("Logging Out");
+                        displayToast("Logging Out...");
+                        finish();
+                        drawerLayout.closeDrawer(Gravity.START);
+                        break;
+                    case R.id.nav_image_viewer:
+                        displayToast("Opening ImageViewer");
                         drawerLayout.closeDrawer(Gravity.START);
                         break;
                 }
@@ -126,6 +133,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayToast(String message){
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        displayToast("GoodBye!");
+        finish();
     }
 }

@@ -19,6 +19,7 @@ import com.example.vaibhavballoli.usefullibrariesapp.Realm.StringModel;
 import java.security.SecureRandom;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -47,6 +48,8 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page);
+        toolbar.setTitle("Login Page");
+        ButterKnife.bind(this);
         //A new RealmConfiguration and a realm file to encrypt and store the credentials. - Check the realm documentation.
         byte[] key = new byte[64];
         new SecureRandom().nextBytes(key);
