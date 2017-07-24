@@ -10,7 +10,7 @@ This project currently uses the following libraries:
 5. Realm - Database
 
 The app also uses a vertical recycler view and a navigation drawer - The basics many apps need with material design guidelines followed. 
-There is also the fingerprint authentication added to login.
+There is also a fingerprint authentication added to login.
 
 
 This app also uses the Google Vision API to scan barcode.(Just to give some the app some utility.
