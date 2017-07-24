@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
 * TODO:0. Adding appropriate links to videos and references to each library usage and try incorporating Shared Preferences and Settings to give a better UI control to the user. - TO BE DONE
 * TODO:1. RecyclerView - List with best practices[handling clicks, etc.]. - TO BE DONE
 * TODO:2. Using ButterKnife. - TO BE DONE
-* TODO:3. Picasso Image Loading(and Downloading) Library. - TO BE DONE
+* TODO:3. Picasso Image Loading(and Downloading) Library. - TO BE DONE - [Since easy to use and low memory]/else Glide/UIL - Almost the same
 * TODO:4. Gson Deserializer to parse JSON objects. - TO BE DONE
 * TODO:5. Try using Retrofit - GitHub API possibly - Easy Access and no API keys. - TO BE DONE
 * TODO:6. Activity regarding usage of camera - Google Vision API[Barcode and QRCode Scanning, Text Detection, Face Detection etc.] - Possibly Barcode and QRCode here. - TO BE DONE

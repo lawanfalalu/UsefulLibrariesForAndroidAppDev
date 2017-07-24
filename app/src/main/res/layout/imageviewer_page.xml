@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/application_toolbar"
+        android:id="@+id/imageviewer_toolbar"></include>
+
+    <EditText
+        android:id="@+id/imageviewer_urlinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Image Url"
+        android:layout_below="@+id/imageviewer_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/imageviewer_url_button" />
+
+    <Button
+        android:id="@+id/imageviewer_url_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageviewer_urlinput"
+        android:text="enter" />
+
+    <ImageView
+        android:id="@+id/imageviewer_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/imageviewer_rotate_left_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/imageviewer_rotate_left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
+        android:layout_marginStart="24dp"
+        android:text="Rotate Left" />
+
+    <Button
+        android:id="@+id/imageviewer_rotate_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate Right"
+        android:layout_marginEnd="19dp"
+        android:layout_alignBaseline="@+id/imageviewer_rotate_left_button"
+        android:layout_alignBottom="@+id/imageviewer_rotate_left_button"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="200*200 dp Picture"
+        android:layout_below="@+id/imageviewer_url_button"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

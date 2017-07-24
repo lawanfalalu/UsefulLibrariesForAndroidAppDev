@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/application_toolbar"
+        android:id="@+id/realmcrud_toolbar"></include>
+
+    <EditText
+        android:id="@+id/realmcrud_deletesearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="116dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Search String and delete"
+        android:layout_toStartOf="@+id/realmcrud_delete_button" />
+
+    <Button
+        android:id="@+id/realmcrud_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/realmcrud_deletesearch"
+        android:text="Delete" />
+
+    <EditText
+        android:id="@+id/realmcrud_checksearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Check for String"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/realmcrud_search_button" />
+
+    <Button
+        android:id="@+id/realmcrud_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/realmcrud_checksearch"
+        android:text="Search" />
+
+    <EditText
+        android:id="@+id/realmcrud_addfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/realmcrud_toolbar"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Add string to Database"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/realmcrud_add_button" />
+
+    <Button
+        android:id="@+id/realmcrud_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/realmcrud_addfield"
+        android:layout_alignParentEnd="true"
+        android:text="Add" />
+
+</RelativeLayout>

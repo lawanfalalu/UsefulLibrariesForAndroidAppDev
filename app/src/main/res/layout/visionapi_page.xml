@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/application_toolbar"
+        android:id="@+id/visionapi_toolbar"></include>
+
+    <Button
+        android:id="@+id/visionapi_scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:text="Scan Code" />
+
+    <TextView
+        android:id="@+id/visionapi_code_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:text="Press scan button to scan a Barcode/QRCode"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/visionapi_addtorealm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visionapi_code_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Add to database" />
+
+    <Button
+        android:id="@+id/visionapi_clearresult_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/visionapi_addtorealm_button"
+        android:layout_below="@+id/visionapi_addtorealm_button"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Clear Result" />
+
+
+</RelativeLayout>

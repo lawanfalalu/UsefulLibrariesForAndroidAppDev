@@ -23,10 +23,3 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--dontwarn com.f2prateek.dart.internal.**
--keep class **$$ExtraInjector { *; }
--keepclasseswithmembernames class * {
-    @com.f2prateek.dart.* <fields>;
-}
--keep class **Henson { *; }
--keep class **$$IntentBuilder { *; }
